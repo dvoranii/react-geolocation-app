@@ -1,17 +1,17 @@
 import styles from "./Nav.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function Navigation() {
   return (
     <nav className={styles.nav}>
       <ul className={styles.ul}>
         <li className={styles.li}>
-          <Link to="/">Home</Link>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li className={styles.li}>
-          <Link to="/product">Products</Link>
+          <NavLink to="/product">Products</NavLink>
         </li>
         <li className={styles.li}>
-          <Link to="/pricing">Pricing</Link>
+          <NavLink to="/pricing">Pricing</NavLink>
         </li>
       </ul>
     </nav>

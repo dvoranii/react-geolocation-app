@@ -4,6 +4,10 @@ nav {
   background: grey;
 }
 
+nav :global(.active) {
+  background-color: green;
+}
+
 ul {
   height: 100%;
   display: flex;
