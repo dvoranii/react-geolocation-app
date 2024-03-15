@@ -1,8 +1,22 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background: grey;
+}
+
 ul {
+  height: 100%;
   display: flex;
   list-style: none;
+  align-content: center;
 }
 
 li {
   padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+li a {
+  color: white;
 }
