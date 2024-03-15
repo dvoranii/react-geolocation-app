@@ -8,11 +8,12 @@ function Navigation() {
           <NavLink to="/">Home</NavLink>
         </li>
         <li className={styles.li}>
-          <NavLink to="/product">Products</NavLink>
+          <NavLink to="/product">Product</NavLink>
         </li>
         <li className={styles.li}>
           <NavLink to="/pricing">Pricing</NavLink>
         </li>
+        <li>{/* import button component */}</li>
       </ul>
     </nav>
   );
