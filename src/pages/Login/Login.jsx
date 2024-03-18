@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "../Login/Login.module.css";
+import ButtonComponent from "../../Components/Button/Button";
 
 export default function Login() {
   const [email, setEmail] = useState("jack@example.com");
@@ -30,7 +31,7 @@ export default function Login() {
 
         {/* replace with component */}
         <div>
-          <button>Login</button>
+          <ButtonComponent path="/" buttonText="Login" className={styles.btn} />
         </div>
       </form>
     </main>

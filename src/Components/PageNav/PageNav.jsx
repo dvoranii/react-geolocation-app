@@ -1,5 +1,7 @@
 import styles from "./PageNav.module.css";
 import { NavLink } from "react-router-dom";
+import ButtonComponent from "../Button/Button";
+
 function PageNav() {
   return (
     <nav className={styles.nav}>
@@ -15,7 +17,11 @@ function PageNav() {
           <NavLink to="/pricing">Pricing</NavLink>
         </li>
         <li className={styles.li}>
-          <NavLink to="/login">Login</NavLink>
+          <ButtonComponent
+            path="/login"
+            buttonText="Login"
+            className={styles.loginBtn}
+          />
         </li>
       </ul>
     </nav>
