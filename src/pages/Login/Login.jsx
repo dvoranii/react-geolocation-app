@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "../Login/Login.module.css";
 
 export default function Login() {
-  // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("jack@example.com");
   const [password, setPassword] = useState("qwerty");
 
@@ -29,6 +28,7 @@ export default function Login() {
           />
         </div>
 
+        {/* replace with component */}
         <div>
           <button>Login</button>
         </div>
