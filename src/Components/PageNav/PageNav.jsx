@@ -1,13 +1,18 @@
 import styles from "./PageNav.module.css";
 import { NavLink } from "react-router-dom";
 import ButtonComponent from "../Button/Button";
+import Logo from "../Logo/Logo";
 
 function PageNav() {
   return (
     <nav className={styles.nav}>
-      <NavLink to="/">
+      {/* <NavLink to="/">
         <img className={styles.logo} src="/logo.png" alt="" />
-      </NavLink>
+      </NavLink> */}
+
+      <div className={styles.logoWrapper}>
+        <Logo></Logo>
+      </div>
 
       <ul className={styles.ul}>
         <li className={styles.li}>

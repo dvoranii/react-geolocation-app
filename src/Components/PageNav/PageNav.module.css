@@ -14,13 +14,11 @@ ul {
   height: 100%;
   display: flex;
   list-style: none;
-  align-content: center;
+  align-items: center;
 }
 
 li {
   padding: 20px;
-  display: flex;
-  align-items: center;
 }
 
 li a {
@@ -38,13 +36,13 @@ li .loginBtn:hover {
   color: white;
 }
 
-a .logo {
+.logoWrapper {
   height: 100%;
-  width: fit-content;
 }
 
-.logo {
-  max-width: 250px;
-  object-fit: contain;
-  margin-left: 20px;
+.logoWrapper a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 2.4rem;
 }

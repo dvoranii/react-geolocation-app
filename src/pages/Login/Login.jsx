@@ -29,7 +29,6 @@ export default function Login() {
           />
         </div>
 
-        {/* replace with component */}
         <div>
           <ButtonComponent path="/" buttonText="Login" className={styles.btn} />
         </div>
