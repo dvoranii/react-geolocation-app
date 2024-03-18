@@ -6,22 +6,18 @@ import Logo from "../Logo/Logo";
 function PageNav() {
   return (
     <nav className={styles.nav}>
-      {/* <NavLink to="/">
-        <img className={styles.logo} src="/logo.png" alt="" />
-      </NavLink> */}
-
       <div className={styles.logoWrapper}>
         <Logo></Logo>
       </div>
 
-      <ul className={styles.ul}>
-        <li className={styles.li}>
+      <ul className={styles.pageList}>
+        <li className={styles.listItem}>
           <NavLink to="/product">Product</NavLink>
         </li>
-        <li className={styles.li}>
+        <li className={styles.listItem}>
           <NavLink to="/pricing">Pricing</NavLink>
         </li>
-        <li className={styles.li}>
+        <li className={styles.listItem}>
           <ButtonComponent
             path="/login"
             buttonText="Login"
