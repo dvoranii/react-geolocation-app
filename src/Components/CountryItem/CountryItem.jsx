@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "../CountryItem/CountryItem.module.css";
 
 function CountryItem({ country }) {

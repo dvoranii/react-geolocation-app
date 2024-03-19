@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import styles from "../Button/Button.module.css";
 import { useNavigate, useLocation } from "react-router-dom";
 

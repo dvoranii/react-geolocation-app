@@ -1,11 +1,11 @@
 import Spinner from "../Spinner/Spinner";
 import styles from "../CountryList/CountryList.module.css";
-import CountryItem from "./CountryItem";
+import CountryItem from "../CountryItem/CountryItem";
 import Message from "../Message/Message";
-import { useCities } from "../contexts/CitiesContext";
+// import { useCities } from "../contexts/CitiesContext";
 
-function CountryList() {
-  const { cities, isLoading } = useCities();
+function CountryList({ cities, isLoading }) {
+  // const { cities, isLoading } = useCities();
 
   if (isLoading) return <Spinner />;
 
@@ -14,6 +14,7 @@ function CountryList() {
       <Message message="Add your first city by clicking on a city on the map" />
     );
 
+  // to get unique values of countries (constructs country array)
   const countries = cities.reduce((arr, city) => {
     if (!arr.map((el) => el.country).includes(city.country))
       return [...arr, { country: city.country, emoji: city.emoji }];
