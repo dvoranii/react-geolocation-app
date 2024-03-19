@@ -44,6 +44,7 @@
 import styles from "../CityItem/CityItem.module.css";
 
 function CityItem({ city }) {
+  console.log(city);
   return <li className={styles.cityItem}>{city.cityName}</li>;
 }
 

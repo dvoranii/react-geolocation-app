@@ -22,7 +22,6 @@ function App() {
         const res = await fetch(`${BASE_URL}/cities`);
         const data = await res.json();
         setCities(data);
-        console.log(data);
       } catch {
         console.error("There was an error loading the data...");
       } finally {

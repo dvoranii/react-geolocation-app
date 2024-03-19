@@ -31,4 +31,6 @@ function ButtonComponent({ path, buttonText, className }) {
   );
 }
 
+// create a button component that will be used throughout the application
+
 export default ButtonComponent;
