@@ -35,12 +35,12 @@ function City() {
   // if (isLoading) return <Spinner />;
 
   return (
-    <div>
+    <>
       <h1>City {id}</h1>
       <p>
         Position: {lat}, {lng}
       </p>
-    </div>
+    </>
   );
 
   // return (

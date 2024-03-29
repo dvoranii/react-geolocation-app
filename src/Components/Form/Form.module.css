@@ -16,8 +16,13 @@
 }
 
 .buttons {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.btn {
+  padding: 4px 8px;
 }
 
 .flag {

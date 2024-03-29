@@ -1,25 +1,28 @@
 import styles from "../Button/Button.module.css";
 import { useNavigate, useLocation } from "react-router-dom";
 
-function ButtonComponent({ path, buttonText, className }) {
+// edge case
+function login() {
+  // will import functionality from util module
+  console.log("Performing login...");
+}
+
+function ButtonComponent({ path, buttonText, className, onClick }) {
   let navigate = useNavigate();
   let location = useLocation();
 
-  // edge case
-  function login() {
-    // will import functionality from util module
-    console.log("Performing login...");
-  }
-
-  // This approach allows us to maintain integrity of semantic html instead of using a <Link> element
-  function handleClick(e) {
+  function defaultClickHandler(e) {
     e.preventDefault();
-    if (location.pathname === "/login") {
-      login();
-    } else {
-      navigate(path);
+    if (path) {
+      if (location.pathname === "login") {
+        login();
+      } else {
+        // This approach allows us to maintain integrity of semantic html instead of using a <Link> element
+        navigate(path);
+      }
     }
   }
+  const handleClick = onClick ? onClick : defaultClickHandler;
 
   const buttonClass = `${styles.button} ${className || ""}`;
 
@@ -29,7 +32,5 @@ function ButtonComponent({ path, buttonText, className }) {
     </button>
   );
 }
-
-// create a button component that will be used throughout the application
 
 export default ButtonComponent;
