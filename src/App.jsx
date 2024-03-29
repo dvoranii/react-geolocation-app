@@ -1,4 +1,10 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+  Navigate,
+} from "react-router-dom";
 import { useEffect, useState } from "react";
 import Product from "./pages/Product/Product";
 import Homepage from "./pages/Home/Homepage";
@@ -54,10 +60,7 @@ function App() {
           <Route path="pricing" element={<Pricing />}></Route>
           <Route path="login" element={<Login />}></Route>
           <Route path="app" element={<AppLayout />}>
-            <Route
-              index
-              element={<CityList cities={cities} isLoading={isLoading} />}
-            ></Route>
+            <Route index element={<Navigate replace to="cities" />}></Route>
             <Route
               path="cities"
               element={<CityList cities={cities} isLoading={isLoading} />}

@@ -6,10 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 function Map() {
   const navigate = useNavigate();
-  // const [searchParams, setSearchParams] = useSearchParams();
-  // const lat = searchParams.get("lat");
-  // const lng = searchParams.get("lng");
-
   const { lat, lng, setSearchParams } = useMapLocation();
 
   return (
